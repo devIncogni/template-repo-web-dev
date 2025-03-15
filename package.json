@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js",
-    "predeploy": "git branch gh-pages && git checkout gh-pages && git merge main --no-edit",
+    "setup-deploy": "git branch gh-pages",
+    "predeploy": "git checkout gh-pages && git merge main --no-edit && webpack --config webpack.prod.js",
     "deploy": "git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages",
     "postdeploy": "git checkout main && echo \"Deployment Success\""
   },
