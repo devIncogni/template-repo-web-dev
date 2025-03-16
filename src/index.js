@@ -1,5 +1,3 @@
-// Just an empty js file
-
+// CSS Imports
 import "./styles.css";
-
-console.log("HELLOW WORLD");
+import "./default-reset.css";
