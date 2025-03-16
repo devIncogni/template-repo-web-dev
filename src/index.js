@@ -1,1 +1,1 @@
-console.log("Hello World");
+// Just an empty js file
